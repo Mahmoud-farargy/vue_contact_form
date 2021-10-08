@@ -1,0 +1,127 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+@import url(../design/Fonts/Quicksand/quicksand.css);
+// root
+:root{
+    // colors
+    --primary-clr: #0758fc;
+    --tertiary-clr: #52616b;
+    --quaternary-clr: #f0f5f9;
+    --ultra-white: #fff;
+    --ultra-black: #000;
+    --gray: #dbdbdb;
+    --shadow-white: #efefef;
+    --heading-black: #353535;
+    --text-black: #4a4a4a;
+    --dark-gray: rgb(219, 219, 219);
+    --light-gray: #bababa;
+    // font-sizes
+    --font-size: 14px;
+    --font-size-x-small: 0.75em;
+    --font-size-small: 0.875em;
+    --font-size-medium: 0.950em;
+    --font-size-large: 1.25em;
+    --font-size-x-large: 1.5em;
+    --font-size-x-x-large: 2em;
+    --font-size-x-x-x-large: 2.5em;
+    //font weights
+    --font-weight: 400;
+    --font-weight-medium: 500;
+    --font-weight-heavy: 700;
+    --font-weight-extra-heavy: 900;
+    // font styles
+    --sand-regular:"Quicksand-regular", serif;
+    --sand-semiBold: "Quicksand-semiBold", serif;
+    --sand-bold: "Quicksand-bold", serif;
+    --sand-light: "Quicksand-light", serif;
+    --sand-medium: "Quicksand-medium", serif;
+    // transitions
+    --mild-transition: all 500ms ease;
+    }
+// GLOBAL CLASSES
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--ultra-white);
+}
+body, i, h5, h6, span {
+    font-family: var(--sand-regular);
+}
+h1, h2, h3, h4{
+    font-family: var(--sand-bold);
+}
+ul, ol, dl {
+    margin: 0;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.disabled{
+    cursor: not-allowed;
+    opacity: 0.5 !important;
+    pointer-events: none;
+}
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.content--box{
+    padding: 35px 25px;
+}
+// --x----GLOBAL CLASSES ---x--
+
+// RESPONSIVE
+// mobile (670px and down)
+@media only screen and (max-width: 670px){
+    .content--box{
+        padding: 30px 15px;
+    }
+    // root on mobile
+    :root{
+        --font-size-x-x-x-large: 1.8em;
+    }
+}
+
+// --x---- RESPONSIVE ----x--
+
+
+// ANIMATION
+.global--loading{
+    @keyframes spin {
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 0;
+    justify-content: center;
+    align-items:center;
+    background-color: var(--ultra-white);
+    z-index: 999;
+    span {
+      display: block;
+      margin: 0 auto;
+      width:60px;
+      height: 60px;
+      border: 4px solid transparent;
+      border-top-color: var(--primary-clr);
+      border-radius: 50%;
+      animation: spin ease 1000ms infinite;
+      -webkit-animation: spin ease 1000ms infinite;
+    }
+  }
+// --x---- ANIMATION -----x--

@@ -1,4 +1,5 @@
 # vue_form
+<img src="/Screenshots/Capture1.png" />
 
 ## Project setup
 ```

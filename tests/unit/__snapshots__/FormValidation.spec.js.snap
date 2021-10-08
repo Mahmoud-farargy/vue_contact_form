@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form.vue && InputForm.vue Matches a snapshot 1`] = `
+<div id="inputForm" class="form-group"><input defaultvalue="" placeholder="Your Name *" id="name" name="name" required="required" type="text" class="input__style">
+  <p class="text-danger">Name should be between 5 and 50 characters.</p>
+</div>
+`;
+
+exports[`Form.vue && InputForm.vue Matches a snapshot 2`] = `
+<form id="locationMap"><span class="vertical__divider"></span>
+  <div class="form--inner">
+    <inputform-stub element="[object Object]" changeinput="[Function]" name="name" inputtype="text" specifictype="text" defaultval=""></inputform-stub>
+    <inputform-stub element="[object Object]" changeinput="[Function]" name="email" inputtype="text" specifictype="email" defaultval=""></inputform-stub>
+    <inputform-stub element="[object Object]" changeinput="[Function]" name="subject" inputtype="text" specifictype="text" defaultval=""></inputform-stub>
+    <inputform-stub element="[object Object]" changeinput="[Function]" name="message" inputtype="textarea" defaultval=""></inputform-stub> <input disabled="disabled" type="submit" role="button" value="SEND →" class="submit__button disabled">
+  </div>
+</form>
+`;
