@@ -2,7 +2,7 @@
 <img src="/Screenshots/Capture1.png" />
 
 ## Demo
-<a href="https://vform.netlify.app">Live demo</a>
+<a href="https://vform.netlify.app" target="_blank">Live demo</a>
   
 ## Project setup
 ```
